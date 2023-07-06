@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SeleccionarAsientos">
+
+    <Button
+        android:id="@+id/seat11Button3"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="11"
+        tools:layout_editor_absoluteX="44dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <Button
+        android:id="@+id/seat12Button3"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="12"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <Button
+        android:id="@+id/seat13Button3"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="13"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <Button
+        android:id="@+id/seat14Button3"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="14"
+        tools:layout_editor_absoluteX="224dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <Button
+        android:id="@+id/seat15Button3"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="15"
+        tools:layout_editor_absoluteX="284dp"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="0dp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/seat14Button2"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="19"
+        app:layout_constraintStart_toEndOf="@+id/seat18Button2"
+        app:layout_constraintTop_toBottomOf="@+id/seat14Butto2" />
+
+    <Button
+        android:id="@+id/seat19Button2"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/seat_button"
+        android:text="19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seat11Button" />
+
+    <Button
+        android:id="@+id/seat20Button2"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="20"
+        app:layout_constraintStart_toEndOf="@+id/seat14Button2"
+        app:layout_constraintTop_toBottomOf="@+id/seat15Button" />
+
+    <Button
+        android:id="@+id/seat17Button2"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/seat_button"
+        android:text="17"
+        app:layout_constraintStart_toEndOf="@+id/seat19Button2"
+        app:layout_constraintTop_toBottomOf="@+id/seat12Button" />
+
+    <Button
+        android:id="@+id/seat18Button2"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="18"
+        app:layout_constraintStart_toEndOf="@+id/seat17Button2"
+        app:layout_constraintTop_toBottomOf="@+id/seat13Button" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:background="#D10202"
+        android:gravity="center"
+        android:text="Seleccionar asientos"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="398dp"
+        android:layout_height="252dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:srcCompat="@drawable/pantallacine" />
+
+    <Button
+        android:id="@+id/seat1Button"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/seat_button"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/seat2Button"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/seat_button"
+        android:text="2"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/seat3Button"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/seat_button"
+        android:text="3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/seat4Button"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="108dp"
+        android:background="@drawable/seat_button"
+        android:text="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/seat5Button"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/seat_button"
+        android:text="5"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/seat6Button"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="92dp"
+        android:background="@drawable/seat_button"
+        android:text="6"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/seat7Button"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="228dp"
+        android:background="@drawable/seat_button"
+        android:text="7"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/seat2Button" />
+
+    <Button
+        android:id="@+id/seat8Button"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/seat_button"
+        android:text="8"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/seat3Button" />
+
+    <Button
+        android:id="@+id/seat9Button"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:background="@drawable/seat_button"
+        android:text="9"
+        app:layout_constraintStart_toEndOf="@+id/seat8Button"
+        app:layout_constraintTop_toBottomOf="@+id/seat4Button" />
+
+    <Button
+        android:id="@+id/seat10Button"
+        android:layout_width="66dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/seat_button"
+        android:text="10"
+        app:layout_constraintStart_toEndOf="@+id/seat9Button"
+        app:layout_constraintTop_toBottomOf="@+id/seat5Button" />
+
+    <Button
+        android:id="@+id/seat11Button"
+        android:layout_width="65dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="44dp"
+        android:background="@drawable/seat_button"
+        android:text="11"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/seat6Button" />
+
+    <Button
+        android:id="@+id/seat12Button"
+        android:layout_width="65dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/seat_button"
+        android:text="12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seat7Button" />
+
+    <Button
+        android:id="@+id/seat13Button"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:layout_marginStart="-5dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/seat_button"
+        android:text="13"
+        app:layout_constraintStart_toEndOf="@+id/seat12Button"
+        app:layout_constraintTop_toBottomOf="@+id/seat8Button" />
+
+    <Button
+        android:id="@+id/seat14Button"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/seat_button"
+        android:text="14"
+        app:layout_constraintStart_toEndOf="@+id/seat13Button"
+        app:layout_constraintTop_toBottomOf="@+id/seat9Button" />
+
+    <Button
+        android:id="@+id/seat15Button"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:background="@drawable/seat_button"
+        android:text="15"
+        app:layout_constraintStart_toEndOf="@+id/seat14Button"
+        app:layout_constraintTop_toBottomOf="@+id/seat10Button" />
+
+    <Button
+        android:id="@+id/seat25Button"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="25"
+        app:layout_constraintStart_toEndOf="@+id/seat24Button2"
+        app:layout_constraintTop_toBottomOf="@+id/seat20Button2" />
+
+    <Button
+        android:id="@+id/seat24Button2"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="24"
+        app:layout_constraintStart_toEndOf="@+id/seat23Button"
+        app:layout_constraintTop_toBottomOf="@+id/seat14Button2" />
+
+    <Button
+        android:id="@+id/seat23Button"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="23"
+        app:layout_constraintStart_toEndOf="@+id/seat22Button2"
+        app:layout_constraintTop_toBottomOf="@+id/seat18Button2" />
+
+    <Button
+        android:id="@+id/seat22Button2"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/seat_button"
+        android:text="22"
+        app:layout_constraintStart_toEndOf="@+id/seat21Button2"
+        app:layout_constraintTop_toBottomOf="@+id/seat17Button2" />
+
+    <Button
+        android:id="@+id/seat21Button2"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="286dp"
+        android:background="@drawable/seat_button"
+        android:text="21"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seat19Button2" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:drawableLeft="@drawable/icono_carrocompra"
+        android:text="COMPRAR"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seat23Button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,38 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.ProyectoApps"
+        android:theme="@style/Theme.Proyecto_ApsMoviles"
         tools:targetApi="31">
+        <activity
+            android:name=".VentanaPrincipal"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".SeleccionarAsientos"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAdministrador"
+            android:exported="false" />
+        <activity
+            android:name=".SegundaPelicula"
+            android:exported="false" />
+        <activity
+            android:name=".CuartaPelicula"
+            android:exported="false" />
+        <activity
+            android:name=".TerceraPelicula"
+            android:exported="false" />
+        <activity
+            android:name=".PrimeraPelicula"
+            android:exported="false" />
+        <activity
+            android:name=".Crear_cuenta"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
