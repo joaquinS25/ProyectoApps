@@ -27,7 +27,7 @@ public class ListarUsuarios extends AppCompatActivity {
         Query query = mFirestore.collection("user");
 
         FirestoreRecyclerOptions<User> firestoreRecyclerOptions = new FirestoreRecyclerOptions.Builder<User>().setQuery(query, User.class).build();
-        mAdater = new UserAdapter(firestoreRecyclerOptions);
+        mAdater = new UserAdapter(firestoreRecyclerOptions, this);
         mAdater.notifyDataSetChanged();
         mRecycler.setAdapter(mAdater);
     }
