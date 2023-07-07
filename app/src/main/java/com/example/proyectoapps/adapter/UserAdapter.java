@@ -1,6 +1,7 @@
 package com.example.proyectoapps.adapter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.proyectoapps.Crear_cuenta;
 import com.example.proyectoapps.R;
 import com.example.proyectoapps.model.User;
 import com.firebase.ui.firestore.FirestoreRecyclerAdapter;
@@ -42,10 +44,17 @@ public class UserAdapter  extends FirestoreRecyclerAdapter<User, UserAdapter.Vie
         viewHolder.apellidoUser.setText(model.getApellidoUser());
         viewHolder.DNIUser.setText(model.getDniUser());
         viewHolder.edadUser.setText(String.valueOf(model.getEdadUser())); // Convertir Long a String
-        //viewHolder.edadUser.setText(model.getEdadUser());
         viewHolder.celularUser.setText(model.getCelularUser());
         viewHolder.emailUser.setText(model.getEmailUser());
         viewHolder.btn_eliminar.setOnClickListener(v -> deleteUser(id));
+        viewHolder.btn_editar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(activity, Crear_cuenta.class);
+                i.putExtra("id_user", id);
+                activity.startActivity(i);
+            }
+        });
     }
 
     private void deleteUser(String id) {
@@ -66,7 +75,7 @@ public class UserAdapter  extends FirestoreRecyclerAdapter<User, UserAdapter.Vie
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView nombreUser, apellidoUser, DNIUser, celularUser, edadUser,emailUser;
-        ImageButton btn_eliminar;
+        ImageButton btn_eliminar, btn_editar;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
@@ -77,6 +86,7 @@ public class UserAdapter  extends FirestoreRecyclerAdapter<User, UserAdapter.Vie
             edadUser = itemView.findViewById(R.id.edad);
             emailUser = itemView.findViewById(R.id.email);
             btn_eliminar = itemView.findViewById(R.id.btn_eliminar);
+            btn_editar = itemView.findViewById(R.id.btnEditar);
         }
     }
 }
