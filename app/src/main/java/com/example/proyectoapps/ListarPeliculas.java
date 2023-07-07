@@ -31,7 +31,7 @@ public class ListarPeliculas extends AppCompatActivity {
 
         FirestoreRecyclerOptions<Pelicula> firestoreRecyclerOptions =
                 new FirestoreRecyclerOptions.Builder<Pelicula>().setQuery(query, Pelicula.class).build();
-        mAdapter = new PeliculaAdapter(firestoreRecyclerOptions);
+        mAdapter = new PeliculaAdapter(firestoreRecyclerOptions, this, getSupportFragmentManager());
         mAdapter.notifyDataSetChanged();
         mRecycler.setAdapter(mAdapter);
 

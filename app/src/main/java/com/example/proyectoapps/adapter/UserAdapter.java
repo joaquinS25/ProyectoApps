@@ -22,8 +22,8 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class UserAdapter  extends FirestoreRecyclerAdapter<User, UserAdapter.ViewHolder>{
-    private FirebaseFirestore mFirestore = FirebaseFirestore.getInstance();
-    Activity activity;
+        private FirebaseFirestore mFirestore = FirebaseFirestore.getInstance();
+        Activity activity;
     /**
      * Create a new RecyclerView adapter that listens to a Firestore Query.  See {@link
      * FirestoreRecyclerOptions} for configuration options.
