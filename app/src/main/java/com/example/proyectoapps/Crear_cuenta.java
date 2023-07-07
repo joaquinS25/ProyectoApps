@@ -6,12 +6,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -92,18 +89,10 @@ public class Crear_cuenta extends AppCompatActivity {
         map.put("celularUser", celularUser);
         map.put("emailUser", emailUser);
 
-        mfirestore.collection("user").document(id).update(map).addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void unused) {
-                Toast.makeText(getApplicationContext(), "Actualizado exitosamente", Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getApplicationContext(), "Error al Actualizar", Toast.LENGTH_SHORT).show();
-            }
-        });
+        mfirestore.collection("user").document(id).update(map).addOnSuccessListener(unused -> {
+            Toast.makeText(getApplicationContext(), "Actualizado exitosamente", Toast.LENGTH_SHORT).show();
+            finish();
+        }).addOnFailureListener(e -> Toast.makeText(getApplicationContext(), "Error al Actualizar", Toast.LENGTH_SHORT).show());
     }
 
     private void PostUser(String nombreUser, String apellidoUser, int edadUser, String dniUser, String celularUser, String emailUser) {
@@ -115,18 +104,10 @@ public class Crear_cuenta extends AppCompatActivity {
         map.put("celularUser", celularUser);
         map.put("emailUser", emailUser);
 
-        mfirestore.collection("user").add(map).addOnSuccessListener(new OnSuccessListener<DocumentReference>() {
-            @Override
-            public void onSuccess(DocumentReference documentReference) {
-                Toast.makeText(getApplicationContext(), "Creado exitosamente", Toast.LENGTH_SHORT).show();
-                finish();
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getApplicationContext(), "Error al ingresar", Toast.LENGTH_SHORT).show();
-            }
-        });
+        mfirestore.collection("user").add(map).addOnSuccessListener(documentReference -> {
+            Toast.makeText(getApplicationContext(), "Creado exitosamente", Toast.LENGTH_SHORT).show();
+            finish();
+        }).addOnFailureListener(e -> Toast.makeText(getApplicationContext(), "Error al ingresar", Toast.LENGTH_SHORT).show());
     }
 
     private void getUser(String id) {
@@ -149,12 +130,7 @@ public class Crear_cuenta extends AppCompatActivity {
                     txtEmailUser.setText(correo);
                 }
             }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Toast.makeText(getApplicationContext(), "Error al obtener los datos", Toast.LENGTH_SHORT).show();
-            }
-        });
+        }).addOnFailureListener(e -> Toast.makeText(getApplicationContext(), "Error al obtener los datos", Toast.LENGTH_SHORT).show());
     }
 
     @Override

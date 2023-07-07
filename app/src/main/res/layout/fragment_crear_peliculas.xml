@@ -40,7 +40,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
         <EditText
-            android:id="@+id/txtApellidoUser2"
+            android:id="@+id/txtTittulo"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginTop="16dp"
@@ -57,7 +57,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtNombreUser" />
 
         <EditText
-            android:id="@+id/txtNombreUser2"
+            android:id="@+id/txtAutor"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginTop="15dp"
@@ -90,23 +90,36 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/ch12pm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:text="CheckBox" />
+                android:layout_weight="1"
+                android:text="12:00 PM" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/ch2pm"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="CheckBox" />
+                android:layout_weight="1"
+                android:text="2:00 PM" />
 
+            <CheckBox
+                android:id="@+id/ch4pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="4:00 PM" />
+
+            <CheckBox
+                android:id="@+id/ch6pm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="6:00 PM" />
         </LinearLayout>
 
         <EditText
-            android:id="@+id/txtDNIUser2"
+            android:id="@+id/txtDuracion"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginTop="13dp"
@@ -139,14 +152,14 @@
             android:orientation="horizontal">
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/ch2D"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:text="2D" />
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/ch3D"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
@@ -155,7 +168,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/txtEmailUser2"
+            android:id="@+id/txtGenero"
             android:layout_width="match_parent"
             android:layout_height="54dp"
             android:layout_marginTop="13dp"
@@ -172,7 +185,7 @@
             app:layout_constraintTop_toBottomOf="@+id/txtCelularUser" />
 
         <Button
-            android:id="@+id/btnRegistrarUsuario2"
+            android:id="@+id/btnRegistrarPelicula"
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:layout_marginTop="24dp"
