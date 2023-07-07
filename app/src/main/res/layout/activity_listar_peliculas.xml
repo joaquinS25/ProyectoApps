@@ -6,26 +6,34 @@
     android:layout_height="match_parent"
     tools:context=".ListarPeliculas">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewPeliculas"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView12"
         android:layout_width="373dp"
         android:layout_height="55dp"
-        android:layout_marginTop="20dp"
         android:fontFamily="@font/hodlers"
         android:gravity="center"
         android:text="Lista de Peliculas"
         android:textColor="@color/iconos"
         android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="20dp" />
 
     <ImageButton
         android:id="@+id/btnAgregarPelicula"
         android:layout_width="96dp"
         android:layout_height="72dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="24dp"
         android:backgroundTint="#3A4750"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

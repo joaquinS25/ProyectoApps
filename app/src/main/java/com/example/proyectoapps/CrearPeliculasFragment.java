@@ -31,7 +31,7 @@ public class CrearPeliculasFragment extends DialogFragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View v = inflater.inflate(R.layout.fragment_crear_peliculas, container, false);
+            View v = inflater.inflate(R.layout.fragment_crear_peliculas, container, false);
         mfirestore = FirebaseFirestore.getInstance();
         txtTitulo = v.findViewById(R.id.txtTittulo);
         txtAutor = v.findViewById(R.id.txtAutor);
