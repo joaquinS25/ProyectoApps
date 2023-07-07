@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="#D6CD7B"
+    android:backgroundTint="#F8F1B6">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/editButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="20dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/edit_icon" />
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="350dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/delete_icon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/usuario" />
+
+        <TextView
+            android:id="@+id/nombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/bonuscoffee"
+            android:text="Nombre"
+            android:textSize="25dp"
+            app:layout_constraintStart_toEndOf="@id/imageButton"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/apellido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/bonuscoffee"
+            android:text="Apellido"
+            android:textSize="25dp"
+            app:layout_constraintStart_toEndOf="@+id/nombre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="70dp"
+            android:fontFamily="@font/bonuscoffee"
+            android:text="Email"
+            android:textSize="16dp"
+            app:layout_constraintStart_toEndOf="@+id/edad"
+            app:layout_constraintTop_toBottomOf="@+id/celular" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="146dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/celular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/bonuscoffee"
+            android:text="Celular"
+            android:textSize="20dp"
+            app:layout_constraintStart_toEndOf="@+id/dni"
+            app:layout_constraintTop_toBottomOf="@+id/apellido" />
+
+        <TextView
+            android:id="@+id/edad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="108dp"
+            android:fontFamily="@font/bonuscoffee"
+            android:text="Edad"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dni" />
+
+        <TextView
+            android:id="@+id/dni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="110dp"
+            android:fontFamily="@font/bonuscoffee"
+            android:text="DNI"
+            android:textSize="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nombre" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

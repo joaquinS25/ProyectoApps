@@ -7,9 +7,12 @@
     tools:context=".ListarUsuarios">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSingle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:listitem="@layout/view_user_single" />
 </androidx.constraintlayout.widget.ConstraintLayout>
